@@ -18,4 +18,8 @@ class Doctor
     Appointment.new(date, patient, self)
   end
 
+  def patients
+    appointments.sollect {|appointment|appointment.patient}
+  end
+
 end
