@@ -13,7 +13,7 @@ class Artist
   def genres
     songs.map{|song|song.artist == self}
   end
-  
+
   def self.all
     @@all
   end
