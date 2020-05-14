@@ -19,7 +19,7 @@ class Doctor
   end
 
   def patients
-    appointments.sollect {|appointment|appointment.patient}
+    appointments.collect {|appointment|appointment.patient}
   end
 
 end
